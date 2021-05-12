@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning</title>
+  <style>
+
+    body{
+      height: 4000px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    #box-1{
+      /* relative means moving from its natural place */
+      /* we move it 50px from the top and 50px from the left */
+      position: relative;
+      top: 50px;
+      /* Higher the z-index, the more closer to you, or more priority  */
+      z-index: 1;
+      left: 50px;
+      background-color: red;
+    }
+
+    .container {
+      position: relative;
+      background-color: #333;
+      width: 500px;
+      height: 500px;
+    }
+
+    #box-2{
+      background-color: yellow;
+      /* since parent element is container and this is child, we want to have child element, absolute so we can move it around within the container */
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+
+    #box-3{
+      /* From the bottom of the container, it went 100px up */
+      /* From the right of the center, over 100px */
+      background-color: green;
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+    }
+
+    #box-4{
+      /* Used for ads for example, this element will be fixed in its place, despite scrolling of a page */
+      background-color: blue;
+      position: fixed;
+    }
+
+    #box-5{
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box-1" class="box"></div>
+  <div class="container">
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+  </div>
+  <div id="box-4" class="box"></div>
+  <div id="box-5" class="box"></div>
+</body>
+</html>

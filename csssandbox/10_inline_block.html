@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Styling</title>
+  <style>
+    li { 
+      /* elements are inherently block level, so we place them inline for hor */
+      /* Displays are displayed as block* */
+      display: inline;
+    }
+    li a {
+      padding-right: 20px;
+    }
+
+    img {
+      /* To make img center, we have to convert it from inline to block */
+      /* Margin auto allows block level elements to center in page */
+      display: block;
+      margin: auto;
+    }
+
+    .box {
+      /* 32% of the full width of the page */
+      width: 32%;
+      background: #f4f4f4;
+      /* Since we have padding of 20px, the padding will be added to the width, so our box element will not be fully inline */
+      /* We need to add the box sizing property: border-box*/
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br>
+  <img src="./img/leaf.png" alt="">
+  <br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aliquid perspiciatis incidunt repudiandae ea, ipsa assumenda ab quae. Deleniti, obcaecati.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aliquid perspiciatis incidunt repudiandae ea, ipsa assumenda ab quae. Deleniti, obcaecati.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aliquid perspiciatis incidunt repudiandae ea, ipsa assumenda ab quae. Deleniti, obcaecati.</p>
+  </div>
+</body>
+</html>
