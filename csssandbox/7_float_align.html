@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float & Align</title>
+</head>
+
+<style>
+
+  * {
+    /* We add this, to prevent adding padding to the widths */
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+  }
+  .container {
+    /* Allows all text to be viewed on screen at all times */
+    /* ex: mobile */
+    max-width: 960px;
+
+    /* Margin all round 30px, auto centers section and keeps width at 960px */
+    margin: 30px auto;
+  }
+
+  .box {
+    background: #f4f4f4;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .box p {
+    /* center is used often */
+    text-align: center;
+    /* alignd text nicely */
+    text-align: justify;
+  }
+
+  /* Box 2 and 3 are within a container with a width of 960px */
+  /* Width % will be within the set container width */
+  /* Floating is the most simple way to align/move elements / not really used */
+  #box-2 {
+    float: left;
+    width: 68%;
+  }
+
+  #box-3 {
+      float: right;
+      width: 30%;
+    }
+
+</style>
+
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iste accusamus veniam voluptatum nesciunt iure adipisci sed dignissimos nemo quidem!</p>
+    </div>
+    
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iste accusamus veniam voluptatum nesciunt iure adipisci sed dignissimos nemo quidem!</p>
+    </div>
+
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iste accusamus veniam voluptatum nesciunt iure adipisci sed dignissimos nemo quidem!</p>
+    </div>
+
+  </div>
+</body>
+</html>
