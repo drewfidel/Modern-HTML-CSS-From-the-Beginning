@@ -87,6 +87,22 @@ p {
   clear: both;
 }
 
+.l-heading {
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
 
 /* NAVBAR */
 #navbar {
@@ -186,6 +202,59 @@ p {
 
 .box i {
   margin-bottom: 10px;
+}
+
+/* ABOUT INFO */
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  /* image is displayed as inline, so in order to margin auto, we need to display as block */
+  display: block;
+  /* now we can center */
+  margin: auto;
+  width: 70%;
+  /* makes border into a circle */
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+
+/* TESTIMONIALS */
+#testimonials {
+  height: 600px;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+/* heading */
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  /* transparent */
+  opacity: 0.;
+}
+
+#testimonials .testimonial img {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 /* FOOTER */
