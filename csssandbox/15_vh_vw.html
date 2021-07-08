@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viewport Height & Width</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  header {
+    background: #333 url('https://source.unsplash.com/random') no-repeat center center/cover;
+    /* height: 100% would only cover for the header selector area */
+    /* 100vh will have it cover the whole current browser orientation  */
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 15rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    margin: 1rem 0;
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    background: white;
+    color: #333;
+  }
+
+  /* Small example using media query to adjust the padding for landscape displays with heights up to 414px */
+  @media (max-height: 414px) {
+    header {
+      padding-top: 5rem;
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <h1>Welcome To Our Website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, aperiam alias laboriosam doloribus
+      fugiat?</p>
+    <a href="#" class="btn">Find Out More</a>
+  </header>
+
+  <section>
+    <h2>About Our Company</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum consequuntur rerum similique, alias fugit amet
+      totam, ducimus fuga iure distinctio debitis esse explicabo qui ipsam! Pariatur, voluptatem architecto. Ipsum eius
+      explicabo earum aspernatur, dolore odio error inventore vitae iste exercitationem ipsam nobis unde iusto est atque
+      quos modi dolorum velit.</p>
+  </section>
+
+</body>
+
+</html>
