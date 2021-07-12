@@ -1,0 +1,79 @@
+/* Mobile screens with widths up to 768px */
+
+/* removes float, centers logo */
+#navbar .logo {
+  float: none;
+  text-align: center;
+}
+
+/* removes float, aligns navbar list items vertically */
+#navbar ul, #navbar ul li {
+  float: none;
+  text-align: center;
+}
+
+/* change padding, add some border dotted lines */
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+
+/* SHOWCASE */
+/* makes height 100%, adjusting for all mobile devices */
+#showcase {
+  height: 100%;
+}
+
+/* adds space on top and botton of showcase content */
+#showcase .showcase-content {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+
+/* HOME-INFO */
+/* #home-info {
+  height: 500px;
+} */
+
+/* removes home info image */
+#home-info .info-img {
+  display: none;
+}
+
+/* only shows home info content and removes float */
+#home-info .info-content {
+  float: none;
+  width: 100%;
+}
+
+/* Boxes */
+/* removes float having ea box vertically stacked, each box fills 100% of its width */
+.box {
+  float: none;
+  width: 100%;
+}
+
+/* ABOUT INFO */
+
+#about-info .info-right,
+#about-info .info-left {
+  float: none;
+  width: 100%;
+}
+
+/* Adds some space between the two sections  */
+#about-info .info-right {
+  margin-top: 30px;
+}
+
+/* Centers heading */
+.l-heading {
+  text-align: center;
+}
+
+
+/* CONTACT FORM */
+#contact-info .box {
+  border-bottom: #444 dotted 1px;
+}
