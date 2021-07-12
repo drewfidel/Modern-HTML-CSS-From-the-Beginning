@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Basics</title>
+  <title>Flex Align</title>
   <style>
     * {
       box-sizing: border-box;
@@ -16,12 +16,18 @@
     }
 
     .flex-container {
+      background-color: #f4f4f4;
+      height: 50vh;
       display: flex;
-      /* row is already default property of flex box */
-      /* flex-direction: row; */
+      flex-direction: row;
 
-      /* When we get to a certain size, it wraps depending on screen and places last item to next row to fit */
-      /* flex-wrap: wrap; */
+      /* aligns veritcally/cross axis (row) */
+      align-items: center;
+
+      /* aligns horizontal/main axis (row) */
+      justify-content: center;
+
+
     }
 
     .item {
@@ -32,19 +38,17 @@
       text-align: center;
       width: 200px;
       border-radius: 10px;
-
-      /* innate flex properties: in one line - flex: grow shrink basis */
-      /* flex: grow shrink basis  */
-
-      /* uses all the properties dictated by number; ie. 1 is used for all 3 properties  */
-      flex: 1
+      /* flex: 1 */
     }
 
-    .item-1 {}
+    /* align self allows the default alignment along the cross axis to be overridden for individual flex items.*/
+    .item-4 {
+      align-self: flex-start;
+    }
 
-    .item-2 {}
-
-    .item-3 {}
+    .item-5 {
+      align-self: flex-end;
+    }
   </style>
 </head>
 
@@ -59,6 +63,16 @@
     <div class="item item-3">
       <h3>Item 3</h3>
     </div>
+    <div class="item item-4">
+      <h3>Item 4</h3>
+    </div>
+    <div class="item item-5">
+      <h3>Item 5</h3>
+    </div>
+    <div class="item item-6">
+      <h3>Item 6</h3>
+    </div>
+
   </div>
 </body>
 
