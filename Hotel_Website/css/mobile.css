@@ -1,5 +1,8 @@
 /* Mobile screens with widths up to 768px */
 
+
+/* NAVBAR */
+
 /* removes float, centers logo */
 #navbar .logo {
   float: none;
@@ -18,7 +21,9 @@
   border-bottom: #444 dotted 1px;
 }
 
+
 /* SHOWCASE */
+
 /* makes height 100%, adjusting for all mobile devices */
 #showcase {
   height: 100%;
@@ -32,6 +37,7 @@
 
 
 /* HOME-INFO */
+
 /* #home-info {
   height: 500px;
 } */
