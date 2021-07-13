@@ -80,7 +80,7 @@ img {
   /* cover whole page */
   height: 100vh;
   position: relative;
-  color: #fff
+  color: #fff;
 }
 
 .hero .content {
