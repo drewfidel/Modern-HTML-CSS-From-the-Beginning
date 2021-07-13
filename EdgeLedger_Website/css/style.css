@@ -48,7 +48,7 @@ img {
   opacity: 0.8;
   width: 100%;
   height: 70px;
-  /* always stuck to the top (position fixed and top 0px) */
+  /* makes everything within navbar class stuck to the top (position fixed and top 0px) */
   position: fixed;
   top: 0px;
   padding: 0 30px;
@@ -72,4 +72,54 @@ img {
 .navbar .logo {
   /* make more logo bold */
   font-weight: 400px;
+}
+
+/* Header */
+.hero {
+  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+  /* cover whole page */
+  height: 100vh;
+  position: relative;
+  color: #fff
+}
+
+.hero .content {
+  display: flex;
+  /* changing direction of grid to column */
+  flex-direction: column;
+  /* since column direction, moves horizontal/cross axis */
+  align-items: center;
+  /* aligns vertically/main axis*/
+  justify-content: center;
+  /* in order to center it vertically, we give it the height of its container (100vh) */
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+/* creates transparent/faded background overlay */
+/* pseudoselector ::after/before - allows us to insert content before the element */
+.hero::before {
+  content: '';
+  /* we make this absolute because the parent is position relative  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+/* any content in hero, higher z index will be closer to us, or in front  */
+.hero * {
+  z-index: 10;
 }
