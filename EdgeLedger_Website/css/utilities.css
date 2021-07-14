@@ -8,7 +8,7 @@
 }
 
 
-/* Button */
+/* Button Utility */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -23,19 +23,137 @@
   opacity: 0.9;
 }
 
-.btn-primary {
+.btn-primary,
+.bg-primary {
   background-color: #28a745;
   color: #fff;
 }
-.btn-secondary {
+.btn-secondary, .bg-secondary {
   background-color: #0284d0;
   color: #fff;
 }
-.btn-dark {
+.btn-dark, .bg-dark {
   background-color: #333;
   color: #fff;
 }
-.btn-light {
+.btn-light, .bg-light {
   background-color: #f4f4f4;
   color: #333;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* sets the padding of the direct divs in flex items */
+.flex-items > div {
+  padding: 20px;
+}
+
+
+/* Flex Columns */
+
+/* reverses contents or switches them */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  /* multiline */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  /* take up whole height */
+  flex: 1;
+}
+
+.flex-columns .column .column1,
+.flex-columns .column .column2 {
+  height: 100%;
+}
+
+/* helps fill entire column/area */
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  /* helps with any stretching of the img */
+  /* scales the image to fit */
+  object-fit: cover;
+}
+
+.flex-columns .column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Cases */
+/* Section Header */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  /* top 20 left/right 20 40 bottom */
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  /* multiline */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  /* max width so we dont go over this width */
+  max-width: 25%;
+  /* padding on sides */
+  padding: 0 4px;
 }
