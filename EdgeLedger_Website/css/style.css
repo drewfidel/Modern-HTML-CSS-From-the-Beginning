@@ -196,7 +196,9 @@ img {
 .post img {
     width: 300px;
     border-radius: 50%;
+    /* display block bc naturally inline */
     display: block;
+    /* auto left and right, 30 bottom */
     margin: 0 auto 30px;
 }
 
@@ -239,7 +241,9 @@ img {
         flex-direction: column;
     }
 
+    /* makes them wrap on top of each other? */
     .flex-columns .column, .flex-grid .column {
+      /* flex grow,shrink,basis in one */
         flex: 100%;
         max-width: 100%;
     }
