@@ -48,6 +48,8 @@ img {
     position: fixed;
     top: 0px;
     padding: 0 30px;
+
+    /* js feature */
     transition: 0.5s;
 }
 
